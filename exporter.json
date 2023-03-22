@@ -1,6 +1,6 @@
 {
     "id": "com.xvia.TrackVia.ios-supernova-exporter",
-    "name": "iOS Tokens",
+    "name": "iOS Design System",
     "description": "iOS token and style exporter",
     "source_dir": "src",
     "version": "0.0.1",
