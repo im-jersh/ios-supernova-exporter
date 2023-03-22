@@ -10,8 +10,9 @@ import Foundation
 
 public extension Tokens {
     enum BorderRadius: CaseIterable, TokenType, Identifiable {
+        case none
 {[ for token in tokens ]}
-        case {{ token.name }}
+case {{ token.name }}
 {[/]}
     }
 }
