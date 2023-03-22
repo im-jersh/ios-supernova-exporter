@@ -23,7 +23,7 @@
     "config": {
         "output": "output.json",
         "sources": "sources.json",
-        "js": "src/functions.js"
+        "js": "src/helpers.js"
     },
     "engines": {
         "pulsar": "1.0.0",
