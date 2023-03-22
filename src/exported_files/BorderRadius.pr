@@ -11,7 +11,7 @@ import Foundation
 public extension Tokens {
     enum BorderRadius: CaseIterable, TokenType, Identifiable {
 {[ for token in tokens ]}
-    {[ if @is.equals(token.name, "default") ]}
+    {[ if token.name.equals("default") ]}
         {[ log "should be wrapped in tics" /]}
         case `{{ token }}`
     {[ else ]}
