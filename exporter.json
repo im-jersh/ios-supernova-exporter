@@ -17,8 +17,8 @@
         "Typography",
         "Radii"
     ],
-    "author": "TrackVia",
-    "organization": "TrckVia",
+    "author": "Josh O'Steen",
+    "organization": "TrackVia",
     "homepage": "https://trackvia.com",
     "config": {
         "output": "output.json",
