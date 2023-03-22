@@ -12,8 +12,10 @@ public extension Tokens {
     enum BorderRadius: CaseIterable, TokenType, Identifiable {
 {[ for token in tokens ]}
     {[ if @is.equals(token.name, "default") ]}
+        {[ log "should be wrapped in tics" /]}
         case `{{ token }}`
     {[ else ]}
+    {[ log "token name" /]}
         case {{ token.name }}
     {[/]}
 {[/]}
