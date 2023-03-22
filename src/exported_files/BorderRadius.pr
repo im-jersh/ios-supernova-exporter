@@ -13,7 +13,7 @@ public extension Tokens {
 {[ for token in tokens ]}
     {[ if token.name.equals("default") ]}
         {[ log "should be wrapped in tics" /]}
-        case `{{ token }}`
+        case `{{ token.name }}`
     {[ else ]}
     {[ log "token name" /]}
         case {{ token.name }}
