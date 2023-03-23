@@ -12,13 +12,27 @@ public extension Tokens {
     enum BorderRadius: CaseIterable, TokenType, Identifiable {
 {[ for token in tokens ]}
     {[ if token.name.equals("default") ]}
-        {[ log "should be wrapped in tics" /]}
         case `{{ token.name }}`
     {[ else ]}
-    {[ log "token name" /]}
         case {{ token.name }}
     {[/]}
 {[/]}
+    }
+}
+
+public extension Tokens.BorderRadius {
+    var id: Double { rawValue }
+
+    var rawValue: Double {
+        switch self {
+{[ for token in tokens ]}
+    {[ if token.name.equals("circle") ]}
+        case .{{ token.name }}: return .infinity
+    {[ else ]}
+        case .{{ token.name }}: return {{ token.measure }}
+    {[/]}
+{[/]}
+        }
     }
 }
 
