@@ -9,10 +9,12 @@ import Foundation
 
 public extension Tokens.Color {
 {[ for token in tokens ]}
+
     id: {{ token.id }}
     name: {{ token.name }}
     description: {{ token.description }}
     hex: {{ token.value.hex }}
     rgba: {{ token.value.r }}/{{ token.value.g }}/{{ token.value.b }}/{{ token.value.a }}
+    
 {[/]}
 }
