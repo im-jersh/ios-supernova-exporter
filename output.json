@@ -2,7 +2,11 @@
     "blueprints": [
         {
             "invoke": "BorderRadius.pr",
-            "write_to": "Measurement Tokens/BorderRadius.swift"
+            "write_to": "BorderRadius.swift"
+        },
+        {
+            "invoke": "Colors.pr",
+            "write_to": "Colors.swift"
         }
     ]
 }
