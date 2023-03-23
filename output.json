@@ -5,7 +5,7 @@
             "write_to": "BorderRadius.swift"
         },
         {
-            "invoke": "Colors.pr",
+            "invoke": "colors.pr",
             "write_to": "Colors.swift"
         }
     ]
